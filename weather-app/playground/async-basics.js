@@ -9,3 +9,9 @@ setTimeout(() => {
 }, 0);
 
 console.log('Finishing up');
+
+
+var x = 1;
+var y = x + 9;
+
+console.log(`y is ${y}`);
