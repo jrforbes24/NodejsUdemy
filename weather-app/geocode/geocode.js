@@ -15,7 +15,7 @@ var geocodeAddress = (address, callback ) => {
       callback(undefined, {
         address: body.results[0].formatted_address,
         lattitude: body.results[0].geometry.location.lat,
-        Longitude: body.results[0].geometry.location.lng        
+        longitude: body.results[0].geometry.location.lng        
       });
 
     }
