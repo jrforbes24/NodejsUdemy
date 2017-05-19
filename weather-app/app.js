@@ -37,4 +37,4 @@ geocode.geocodeAddress(argv.address, (errorMessage, results) =>{
 
 // https://maps.googleapis.com/maps/api/geocode/json?address=570%20E%201925%20S%20Clearfield%20UT%2084015
 // https://api.darksky.net/forecast/983174d05dc73e6ec70becf68e28a8c4/37.8267,-122.4233
-// 983174d05dc73e6ec70becf68e28a8c4  secret key
+// 983174d05dc73e6ec70becf68e28a8c4  secret key for darksky 

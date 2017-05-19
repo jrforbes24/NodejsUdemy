@@ -22,7 +22,7 @@ var getWeather = (lattitude, longitude, callback) => {
   	if (the_body.alerts == null) {
   		return "no alerts";
   } else {
-  	return the_body.alerts[0].description;  	
+  	return the_body.alerts.description;  	
   }
  }
   
