@@ -5,4 +5,5 @@ request({
   json: true
 }, (error, response, body) => {
   console.log(JSON.stringify(body, undefined, 2));
+  console.log(JSON.stringify(results[0].formatted_address, undefined, 2));
 });
