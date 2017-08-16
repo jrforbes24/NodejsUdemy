@@ -1,1 +1,9 @@
 https://developers.google.com/maps/api/geocode/json
+
+api key 983174d05dc73e6ec70becf68e28a8c4
+
+darksky url for api https://api.darksky.net/forecast/983174d05dc73e6ec70becf68e28a8c4/41.1333549,-112.0595603
+
+
+Lat = 41.1333549
+Lng = -112.0595603
