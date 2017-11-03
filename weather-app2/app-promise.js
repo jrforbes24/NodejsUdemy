@@ -17,6 +17,15 @@ const argv = yargs
 var the_address = encodeURIComponent(argv.address);
 var geocodeURL = `https://maps.google.com/maps/api/geocode/json?address=${the_address}`
 
-axios.get(geocodeURL).then((respnse) => {
-
+axios.get(geocodeURL).then((response) => {
+  if (response.data.status === 'ZERO_RESULTS') {
+    throw new Error('Unable to find that address.');
+  }
+  console.log(response.data);
+}).catch((e) => {
+  if (e.code === 'ECONNREFUSED') {
+    console.log('Unable to connect to API servers.');
+  } else {
+    console.log(e.message);
+  }
 });
